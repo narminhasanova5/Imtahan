@@ -1,0 +1,126 @@
+.head2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  height: 30vh;
+  h6 {
+    color: #82ae46;
+    font-size: 17px;
+  }
+  h3 {
+    font-size: 25px;
+    font-size: 35px;
+    font-weight: 500;
+  }
+  h5{
+    color: gray;
+    font-weight: 400;
+    font-size: 15px;
+  }
+}
+.product_container{
+    width: 100%;
+    padding: px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);padding-left: 85px;
+    button {
+        background-color: #82ae46;
+        color: white;
+        border: none;
+        width: 120px;
+        height: 40px;
+        border-radius: 20px;
+        font-family: Poppins;
+        font-size: 13px;
+        &:hover {
+          background-color: transparent;
+          border: 1px solid #82ae46;
+          color: #82ae46;
+        }
+      }
+}
+.product_card{
+    width:250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid rgb(218, 217, 217);
+    &:hover{
+        box-shadow: 2px 4px 2px 2px rgb(223, 223, 223) ;
+    }
+    img{
+        width: 100%;
+    }
+}
+.product_name{
+    font-weight: 300;
+   color: rgb(76, 76, 76);
+   font-size: 15px;
+}
+.product_price{
+    color: #82ae46;
+    font-family: Poppins;
+}
+@media screen and (min-width: 300px) and (max-width: 576px) {
+    .head2 {
+      height: auto;
+      padding: 30px 15px;
+      gap: 15px;
+      text-align: center;
+      
+      h6 {
+        font-size: 14px;
+      }
+      
+      h3 {
+        font-size: 24px;
+        font-weight: 500;
+      }
+      
+      h5 {
+        font-size: 13px;
+        line-height: 1.5;
+      }
+    }
+  
+    .product_container {
+      height: auto;
+      grid-template-columns: 1fr;
+      padding: 0 20px 40px;
+      gap: 20px;
+      
+      button {
+        width: 100px;
+        height: 35px;
+        font-size: 12px;
+      }
+    }
+  
+    .product_card {
+      width: 100%;
+      height: auto;
+      padding-bottom: 15px;
+      margin: 0 auto;
+      max-width: 280px;
+      
+      img {
+        max-height: 180px;
+        object-fit: cover;
+      }
+    }
+  
+    .product_name {
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .product_price {
+      font-size: 14px;
+    }
+  }
+  

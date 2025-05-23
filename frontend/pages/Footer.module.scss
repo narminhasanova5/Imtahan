@@ -1,0 +1,128 @@
+.footer {
+    padding: 5rem 0 2rem;
+    background-color: #f8f9fa;
+    
+    &__row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 3rem;
+    }
+    
+    &__column {
+      flex: 1 1 250px;
+      margin-bottom: 2rem;
+      padding-right: 2rem;
+      
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+    
+    &__title {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      color: #000;
+    }
+    
+    &__text {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: #6c757d;
+      margin-bottom: 1.5rem;
+    }
+    
+    &__social {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    
+    &__socialLink {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #82ae46;
+      color: #fff;
+      transition: all 0.3s ease;
+      
+      &:hover {
+        background-color: #000;
+        transform: translateY(-3px);
+      }
+    }
+    
+    &__icon {
+      font-size: 1.2rem;
+    }
+    
+    &__menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    &__menuItem {
+      margin-bottom: 0.8rem;
+    }
+    
+    &__link {
+      color: #6c757d;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+      
+      &:hover {
+        color: #82ae46;
+      }
+    }
+    
+    &__contact {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    &__contactItem {
+      display: flex;
+      margin-bottom: 1rem;
+      align-items: flex-start;
+    }
+    
+    &__contactIcon {
+      color: #82ae46;
+      font-size: 1.2rem;
+      margin-right: 1rem;
+      margin-top: 0.2rem;
+    }
+    
+    &__contactText {
+      color: #6c757d;
+      font-size: 0.9rem;
+    }
+    
+    &__copyright {
+      padding-top: 2rem;
+      border-top: 1px solid #dee2e6;
+      text-align: center;
+    }
+    
+    &__copyrightText {
+      font-size: 0.9rem;
+      color: #6c757d;
+    }
+    
+    &__copyrightLink {
+      color: #82ae46;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  

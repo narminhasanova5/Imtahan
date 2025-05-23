@@ -1,0 +1,70 @@
+.basketContainer {
+  padding: 2rem;
+  font-family: Poppins;
+}
+
+.basketTitle {
+  font-size: 50px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #333;
+  font-weight: 400;
+
+}
+
+.emptyMessage {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+.basketList {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+}
+
+.basketItem {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.basketImage {
+  width: 110%;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.basketProduct {
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.basketPrice {
+  color: #82ae46;
+  margin-bottom: 15px;
+}
+
+.removeButton {
+  background-color: #82ae46;
+  width: 120px;
+  height: 40px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-family: Poppins;
+  border-radius: 20px;
+}
+
+.removeButton:hover {
+  color: #82ae46;
+  border: 1px solid #82ae46;
+  background-color: white;
+}
